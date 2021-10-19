@@ -1,0 +1,147 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #aaa;
+  font-family: monospace;
+}
+
+.main-container{
+  position: relative;
+  margin: 100px auto;
+  max-width: 420px;
+  background-color: #ddd;
+  padding: 15px;
+}
+
+.main-container .splash-header-name{
+  font-size: 2.7rem;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin: 15px 0px 50px 5px;
+  color: black;
+}
+
+.balance-holder{
+  margin: 10px 0 10px 10px;
+}
+
+.balance-text{
+  font-family: "Courier";
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0px;
+}
+
+.balance-value{
+  font-family: "Courier";
+  font-size: 3rem;
+  margin: 10px 0 10px 10px;
+  color: black;
+}
+
+.income-expenditure-frame{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: monospace;
+  font-size: 1.2rem;
+}
+.income-expenditure-frame div{
+  width: 180px;
+  background: white;
+  border-radius: 10px;
+}
+.income-expenditure-frame div h4{
+  text-align: center;
+  font-size: 1rem;
+}
+.income-expenditure-frame div h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.income-expenditure-frame .income-holder h3{
+  color: green;
+}
+
+.income-expenditure-frame .expenditure-holder h3{
+  color: red;
+}
+.history-text{
+  margin: 20px 10px 20px 10px ;
+  font-family: monospace;
+  font-size: 1.25rem;
+}
+
+.itemlist .redlist, .greenlist{
+  list-style: none;
+  font-family: monospace;
+  font-size: 1.15rem;
+  background-color: white;
+  padding: 10px;
+  margin: 0 0 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.itemlist li:before{
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top:0;
+  left:0;
+}
+.itemlist .redlist:before{
+  background-color: red;
+}
+.itemlist .greenlist:before{
+  background-color: green;
+}
+
+.itemlist li p{
+  margin-left: 30px;
+}
+.itemlist li:hover{
+  transform: scale(1.01);
+  transition: 100ms ease-in;
+}
+
+.item-container p{
+  font-size: 1.15rem;
+  margin: 20px 10px 10px;
+}
+.item-container input{
+  padding: 5px;
+  width: 90%;
+}
+.amount-container p{
+  font-size: 1.15rem;
+  margin: 10px 10px 10px;
+
+}
+.amount-container input{
+  padding: 5px;
+  width: 90%;
+}
+
+.submit-button{
+  width: 90%;
+  background-color: green;
+  padding: 10px 20px;
+  margin: 20px auto 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  color: white;
+  border: 2px solid green;
+}
+
+.submit-button:hover{
+  color: green;
+  background-color: white;
+  transition: 200ms;
+}
